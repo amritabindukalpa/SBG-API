@@ -1,15 +1,18 @@
 package determinator
 
+const red = "red"
+const black = "black"
+
 func Colour(randomNumber int) string {
 
 	if (1 <= randomNumber && randomNumber <= 10) || (19 <= randomNumber && randomNumber <= 28) {
 		if IsOdd(randomNumber) {
-			return "red"
+			return red
 		}
-		return "black"
+		return black
 	}
 	if IsOdd(randomNumber) {
-		return "black"
+		return black
 	}
-	return "red"
+	return red
 }
