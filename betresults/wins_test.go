@@ -28,6 +28,11 @@ var winsTests = []WinsTestCase{
 		result:   models.Result{3, "black", false},
 		expected: models.Winning{"", "", ""},
 	},
+	{
+		bet:      models.Bets{2, "red", true},
+		result:   models.Result{3, "black", false},
+		expected: models.Winning{"", "", ""},
+	},
 }
 
 func TestColourOutput(t *testing.T) {
