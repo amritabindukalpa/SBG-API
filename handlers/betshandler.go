@@ -6,6 +6,7 @@ import (
 	"strconv"
 
 	"github.com/amritabindukalpa/sbg-api/betresults"
+	"github.com/amritabindukalpa/sbg-api/modelcreators"
 	"github.com/amritabindukalpa/sbg-api/models"
 )
 
@@ -23,7 +24,7 @@ func PlaceBets(w http.ResponseWriter, r *http.Request) {
 		IsOdd:  odd,
 	}
 
-	result := models.NewResult()
+	result := modelcreators.CreateResult()
 	wins := betresults.GetWins(b, result)
 	fmt.Fprintf(w, wins.NumberWin+wins.ColourWin+wins.ParityWin+"The number is:"+strconv.Itoa(result.Number))
 }
