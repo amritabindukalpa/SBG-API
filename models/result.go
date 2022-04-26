@@ -12,7 +12,7 @@ type Result struct {
 }
 
 func NewResult() Result {
-	n := generators.RandomNumber()
+	n := generators.RandomNumber(36)
 	r := Result{
 		Number: n,
 		Colour: determinator.Colour(n),
