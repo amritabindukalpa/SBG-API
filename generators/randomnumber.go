@@ -5,8 +5,8 @@ import (
 	"time"
 )
 
-func RandomNumber() int {
+func RandomNumber(limit int) int {
 	rand.Seed(time.Now().UnixNano())
-	randomNumber := rand.Intn(36)
+	randomNumber := rand.Intn(limit)
 	return randomNumber
 }
