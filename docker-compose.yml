@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  sbg:
+    build: .
+    image: "0.1"
+    container_name: sbg_api
+    ports:
+      - 8080:8080

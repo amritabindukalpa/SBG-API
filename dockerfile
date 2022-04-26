@@ -1,8 +1,9 @@
 FROM golang:1.16-alpine
 
-RUN mkdir -p /app
 WORKDIR /app
-ADD . /app
+COPY . .
+
+EXPOSE 8080
 
 RUN go build ./main.go
 
