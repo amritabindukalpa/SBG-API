@@ -12,12 +12,14 @@ type Result struct {
 	IsOdd  bool
 }
 
-func NewResult() Result {
-	n := generators.RandomNumber(constants.NumberLimit)
-	r := Result{
-		Number: n,
-		Colour: determinator.Colour(n),
-		IsOdd:  determinator.IsOdd(n),
-	}
-	return r
+func (f *Result) SetNumber() {
+    f.Number = generators.RandomNumber(constants.NumberLimit)
+}
+
+func (f *Result) SetColour() {
+    f.Colour = determinator.Colour(f.Number)
+}
+
+func (f *Result) SetParity() {
+    f.IsOdd = determinator.IsOdd(f.Number)
 }
