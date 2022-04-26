@@ -1,9 +1,10 @@
 package betresults_test
 
 import (
-	"sbg-api/betresults"
-	"sbg-api/models"
 	"testing"
+
+	"github.com/amritabindukalpa/sbg-api/betresults"
+	"github.com/amritabindukalpa/sbg-api/models"
 )
 
 type WinsTestCase struct {

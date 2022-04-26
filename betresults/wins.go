@@ -1,7 +1,7 @@
 package betresults
 
 import (
-	"sbg-api/models"
+	"github.com/amritabindukalpa/sbg-api/models"
 )
 
 const NumberWin = "Your number won!"

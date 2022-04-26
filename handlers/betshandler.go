@@ -3,9 +3,10 @@ package handlers
 import (
 	"fmt"
 	"net/http"
-	"sbg-api/betresults"
-	"sbg-api/models"
 	"strconv"
+
+	"github.com/amritabindukalpa/sbg-api/betresults"
+	"github.com/amritabindukalpa/sbg-api/models"
 )
 
 func PlaceBets(w http.ResponseWriter, r *http.Request) {

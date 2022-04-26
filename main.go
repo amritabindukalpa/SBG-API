@@ -3,7 +3,8 @@ package main
 import (
 	"log"
 	"net/http"
-	"sbg-api/handlers"
+
+	"github.com/amritabindukalpa/sbg-api/handlers"
 )
 
 func handleRequests() {
