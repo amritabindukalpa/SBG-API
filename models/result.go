@@ -1,8 +1,8 @@
 package models
 
 import (
-	"sbg-api/determinator"
-	"sbg-api/generators"
+	"github.com/amritabindukalpa/sbg-api/determinator"
+	"github.com/amritabindukalpa/sbg-api/generators"
 )
 
 type Result struct {

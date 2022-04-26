@@ -1,8 +1,9 @@
 package determinator_test
 
 import (
-	"sbg-api/determinator"
 	"testing"
+
+	"github.com/amritabindukalpa/sbg-api/determinator"
 )
 
 type ColourTestCase struct {

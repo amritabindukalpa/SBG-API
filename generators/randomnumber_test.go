@@ -1,8 +1,9 @@
 package generators_test
 
 import (
-	"sbg-api/generators"
 	"testing"
+
+	"github.com/amritabindukalpa/sbg-api/generators"
 )
 
 func TestColourOutput(t *testing.T) {
