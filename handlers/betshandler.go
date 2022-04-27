@@ -26,5 +26,5 @@ func PlaceBets(w http.ResponseWriter, r *http.Request) {
 
 	result := modelcreators.CreateResult()
 	wins := betresults.GetWins(b, result)
-	fmt.Fprintf(w, wins.NumberWin+wins.ColourWin+wins.ParityWin+"The number is:"+strconv.Itoa(result.Number))
+	fmt.Fprintf(w, wins.NumberWin+wins.ColourWin+wins.ParityWin+"The winning number is:"+strconv.Itoa(result.Number))
 }
