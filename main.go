@@ -8,7 +8,9 @@ import (
 )
 
 func handleRequests() {
-	http.HandleFunc("/", handlers.PlaceBets)
+	http.HandleFunc("/", handlers.GetHomePage)
+	http.HandleFunc("/placebets", handlers.PlaceBets)
+	http.HandleFunc("/betswithamount", handlers.BetsWithAmount)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
