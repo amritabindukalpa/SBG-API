@@ -4,6 +4,7 @@ import (
 	"testing"
 
 	"github.com/amritabindukalpa/sbg-api/betresults"
+	"github.com/amritabindukalpa/sbg-api/constants"
 	"github.com/amritabindukalpa/sbg-api/models"
 )
 
@@ -17,12 +18,12 @@ var winsTests = []WinsTestCase{
 	{
 		bet:      models.Bets{2, "red", true},
 		result:   models.Result{2, "red", true},
-		expected: models.Winning{betresults.NumberWin, betresults.ColourWin, betresults.ParityWin},
+		expected: models.Winning{constants.NumberWin, constants.ColourWin, constants.ParityWin},
 	},
 	{
 		bet:      models.Bets{2, "red", true},
 		result:   models.Result{3, "red", true},
-		expected: models.Winning{"", betresults.ColourWin, betresults.ParityWin},
+		expected: models.Winning{"", constants.ColourWin, constants.ParityWin},
 	},
 	{
 		bet:      models.Bets{2, "red", true},
