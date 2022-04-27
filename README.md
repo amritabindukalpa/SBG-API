@@ -16,7 +16,7 @@ To run the application :-
 2. Open the folder <directory-to-extract-to> in VS Code
 3. Start a new terminal( Ctrl + Shift + ')
 4. Run docker-compose up
-5. Browse to http://localhost:8080/?n=29&c=red&p=odd with the parameters with n, c and p being changed
+5. Browse to http://localhost:8080/placebets/?n=29&c=red&p=odd with the parameters with n, c and p being changed
 
 Things I would have liked to explore :-
 
